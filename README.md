@@ -17,11 +17,10 @@ An improved version of the RAG prototype.
 Think of main.py as RAG version 1 and improved.py as RAG version 1.1
 
 SentenceTransformer gives you dense semantic embeddings (vs. TF-IDF’s keyword overlap).
-
 FAISS is the industry standard for fast, approximate nearest-neighbor retrieval at scale.
 
 a) Document Loading & Chunking
-- Why chunk? LLMs have context-window limits. Breaking large reports into overlapping 500-token snippets preserves continuity at boundaries.
+- Why chunk? LLMs have context-window limits (they get dumb😅). Breaking large reports into overlapping 500-token snippets preserves continuity at boundaries.
 
 - Metadata (e.g. source=file.name) lets you filter by region, date, or document type at retrieval time.
 
