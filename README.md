@@ -115,10 +115,21 @@ Generates a csv with over 1000 rows
 ### requirements.txt
 In worldbankfarmerchat directory, run: 
 
+```
 python -m venv .venv
 
 .\.venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt 
+```
+
+After the virtual env is activated and all requirements installed:
+```
+python create_reports.py
+python generate_customer_data.py
+python main.py
+python improved.py
+python churnpred.py
+```
 
 
